@@ -1,0 +1,33 @@
+<html>
+<head>
+
+	<title>AI Video Surveillance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script rel="main.js"></script>
+  </head>
+  <body background="bg.jpg">
+      <h1 class="btn btn-info heading">Object Finder
+          <br>
+        <b id="note">NOTE: The name given in the input should match the coco ssd model label</b>
+      </h1>
+      <br>
+      <br>
+      <div id="div">
+          <label id="name">Object Name:</label>
+          <br>
+        </div>
+        <div id="div2"><input type="text" name="input" id="input"></div>
+        <br>
+        <br>
+        <h3 class="btn btn-success" id="start" onclick="start()">Start</h3>
+        <br>
+        <br>
+        <h3 class="btn btn-danger" id="status"></h3>
+        <h3 class="btn btn-warning" id="result"></h3>
+  </body>
